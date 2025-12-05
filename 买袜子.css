@@ -1,0 +1,97 @@
+/* 自定义样式 */
+:root {
+    --primary-color: #e74c3c;
+    --secondary-color: #3498db;
+    --light-color: #f8f9fa;
+    --dark-color: #333333;
+}
+
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+/* 轮播图样式 */
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 产品卡片样式 */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 产品价格样式 */
+.price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* 页脚样式 */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+}

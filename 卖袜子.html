@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>袜之家 - 高品质袜子专卖</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="买袜子.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">袜之家</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/products.html">所有产品</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                产品分类
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">男士袜子</a></li>
+                                <li><a class="dropdown-item" href="#">女士袜子</a></li>
+                                <li><a class="dropdown-item" href="#">运动袜</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="搜索产品...">
+                        <button class="btn btn-outline-success" type="submit">搜索</button>
+                    </form>
+                    <a href="pages/cart.html" class="btn btn-primary">
+                        购物车 <span class="badge bg-secondary">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 轮播图 -->
+        <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banners/banner1.jpg" class="d-block w-100" alt="促销活动">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>夏季新品上市</h2>
+                        <p>全场8折优惠，限时抢购！</p>
+                        <a href="#" class="btn btn-primary">立即查看</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banners/banner2.jpg" class="d-block w-100" alt="品牌推荐">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>品牌特惠</h2>
+                        <p>精选品牌，品质保证</p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banners/banner3.jpg" class="d-block w-100" alt="会员专享">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>会员专享</h2>
+                        <p>注册会员，享受更多优惠</p>
+                        <a href="#" class="btn btn-primary">立即注册</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </section>
+
+        <!-- 分类导航 -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">产品分类</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="images/categories/men.jpg" class="card-img-top" alt="男士袜子">
+                        <div class="card-body">
+                            <h5 class="card-title">男士袜子</h5>
+                            <p class="card-text">舒适透气，商务休闲两相宜</p>
+                            <a href="#" class="btn btn-outline-primary">查看产品</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="images/categories/women.jpg" class="card-img-top" alt="女士袜子">
+                        <div class="card-body">
+                            <h5 class="card-title">女士袜子</h5>
+                            <p class="card-text">时尚美观，多种款式可选</p>
+                            <a href="#" class="btn btn-outline-primary">查看产品</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="images/categories/sports.jpg" class="card-img-top" alt="运动袜">
+                        <div class="card-body">
+                            <h5 class="card-title">运动袜</h5>
+                            <p class="card-text">吸湿排汗，运动必备</p>
+                            <a href="#" class="btn btn-outline-primary">查看产品</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="images/categories/kids.jpg" class="card-img-top" alt="儿童袜子">
+                        <div class="card-body">
+                            <h5 class="card-title">儿童袜子</h5>
+                            <p class="card-text">柔软舒适，呵护宝贝双脚</p>
+                            <a href="#" class="btn btn-outline-primary">查看产品</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热销产品 -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">热销产品</h2>
+            <div class="row" id="featured-products">
+                <!-- 产品将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="pages/products.html" class="btn btn-primary">查看更多产品</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>关于我们</h5>
+                    <p>袜之家专注于提供高品质袜子产品，让您的每一步都舒适自在。</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">关于我们</a></li>
+                        <li><a href="#" class="text-white">联系方式</a></li>
+                        <li><a href="#" class="text-white">退换货政策</a></li>
+                        <li><a href="#" class="text-white">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>联系我们</h5>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：service@wazhijia.com</p>
+                    <p>地址：北京市朝阳区XX路XX号</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 袜之家. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定义JS -->
+    <script src="卖袜子.js"></script>
+</body>
+</html>
